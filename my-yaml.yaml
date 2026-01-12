@@ -2,6 +2,7 @@ steps:
 # Step 1: Build the Docker image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/project-70309335-c83d-4b66-8d2/my-repo-test/hello-service:latest', '.']
+
  
 # Step 2: Push the image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
